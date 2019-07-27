@@ -1,0 +1,76 @@
+.price-block {
+	&__wrapper {
+		
+	}
+	&__title {
+		display: block;
+		text-align: center;
+		margin: 0;
+		margin-bottom: 41px;
+		font-family: 'Prata', sans-serif;
+		font-size: 24px;
+		font-weight: 400;
+		line-height: 1.375;
+		color: #1B1B1B;
+	}
+	&__nav-block {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		margin-bottom: 50px;
+	}
+	&__nav-block .btn--price:first-child {
+		width: 170px;
+	}
+	&__nav-block .btn--price:not(:last-child) {
+		margin-right: 15px;
+	}
+	&__list {
+		display: flex;
+		flex-direction: column;
+	}
+	&__card {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		padding-top: 13px;
+		padding-bottom: 14px;
+		margin-bottom: 20px;
+		border-bottom: 1px solid #E3E3E3;
+	}
+	&__card-heading {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+	}
+	&__card-name {
+		width: 100%;
+		max-width: 900px;
+		display: block;
+		font-size: 18px;
+		font-weight: 400;
+		line-height: 1.33;
+		color: #4F4F4F;
+	}
+	&__card-value {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		span {
+			display: block;
+			font-size: 20px;
+			font-weight: 400;
+			line-height: 1.2;
+			color: $gray-color;
+			margin-right: 30px;
+		}
+	}
+	&__card-value svg path {
+		fill: #FD8BA3;
+	}
+	.icon--price {
+		fill: #fff;
+	}
+}

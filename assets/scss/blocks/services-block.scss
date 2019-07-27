@@ -1,0 +1,139 @@
+.services-block {
+	padding-top: 260px;
+	padding-bottom: 105px;
+	&__wrapper {
+		width: 100%;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	&__breadcrumbs-block {
+		width: 100%;
+	}
+	&__breadcrumbs-block ul {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+	}
+	&__breadcrumbs-block li {
+		position: relative;
+		display: block;
+		font-size: 14px;
+		line-height: 1.35;
+		font-weight: 400;
+		color: $gray-color;
+		&:not(:last-child) {
+			margin-right: 45px;
+			&::after {
+				content: '';
+				position: absolute;
+				top: 50%;
+				transform: translateY(-50%);
+				right: -29px;
+				width: 14px;
+				height: 1px;
+				background-color: #C4C4C4;
+			}
+		}
+		&.active {
+			background-color: #FFE4E1;
+			padding: 2px;
+		}
+	}
+	&__content-block {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-top: 96px;
+		margin-bottom: 52px;
+	}
+	&__content-title {
+		display: block;
+		text-align: center;
+		font-family: 'Prata', sans-serif;
+		font-size: 30px;
+		line-height: 1.367;
+		font-weight: 400;
+		color: #1B1B1B;
+		margin: 0;
+		margin-bottom: 39px;
+	}
+	&__content-description {
+		display: block;
+		text-align: center;
+		margin: 0;
+		max-width: 970px;
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 1.75;
+		color: $gray-color;
+	}
+	&__card {
+		display: flex;
+		flex-direction: column;
+		height: calc(100% - 20px);
+		background-color: #FFE4E1;
+		border-radius: 10px;
+		padding-top: 30px;
+		padding-bottom: 24px;
+		margin-bottom: 30px;
+	}
+	&__card-body {
+		display: flex;
+		flex-direction: column;
+	}
+	&__card-icon {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		margin-bottom: 22px;
+	}
+	&__card-inner {
+		display: flex;
+		flex-direction: column;
+		margin-top: auto;
+	}
+	&__card-title {
+		display: block;
+		text-align: center;
+		margin: 0;
+		font-size: 16px;
+		font-weight: 600;
+		text-transform: uppercase;
+		color: #4F4F4F;
+		overflow-x: hidden;
+		max-width: 100%;
+		text-shadow: ellipsis;
+	}
+}
+
+@include for-size(mobile) {
+	.services-block {
+		padding-top: 110px;
+		padding-bottom: 35px;
+		&__breadcrumbs-block {
+			margin-bottom: 30px;
+		}
+		&__content-block {
+			margin-bottom: 26px;
+		}
+		&__content-title {
+			font-size: 18px;
+			margin-bottom: 24px;
+		}
+		&__content-description {
+			font-size: 14px;
+		}
+		&__card {
+			margin-bottom: 15px;
+			padding-top: 18px;
+			padding-bottom: 16px;
+		}
+		&__card-icon {
+			margin-bottom: 10px;
+		}
+		&__card-title {
+			font-size: 14px;
+		}
+	}
+}
