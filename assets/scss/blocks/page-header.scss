@@ -49,6 +49,7 @@
 			height: 100%;
 			display: block;
 			background-size: cover;
+			backface-visibility: hidden;
 		}
 	}
 	&__location-block {
@@ -125,8 +126,10 @@
 		padding-bottom: 14px;
 		font-weight: 600;
 		text-decoration: none;
+		transition: all 0.3s ease-in-out;
 		&:hover, &:active {
 			color: #FD8BA3;
+			transition: all 0.3s ease-in-out;
 			&::before {
 				content: '';
 				position: absolute;
@@ -138,6 +141,7 @@
 				border-radius: 5px;
 				background-color: #FD8BA3;
 				text-decoration: none;
+				transition: all 0.3s ease-in-out;
 			}
 		}
 	}

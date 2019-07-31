@@ -1,6 +1,6 @@
 .price-block {
 	&__wrapper {
-		
+		margin-bottom: 80px;
 	}
 	&__title {
 		display: block;
@@ -26,6 +26,13 @@
 	&__nav-block .btn--price:not(:last-child) {
 		margin-right: 15px;
 	}
+	&__tab-content {
+		display: none;
+		width: 100%;
+	}
+	&__tab-content.active {
+		display: block;
+	}
 	&__list {
 		display: flex;
 		flex-direction: column;
@@ -36,14 +43,18 @@
 		flex-direction: column;
 		padding-top: 13px;
 		padding-bottom: 14px;
-		margin-bottom: 20px;
 		border-bottom: 1px solid #E3E3E3;
+		&:not(:last-child) {
+			margin-bottom: 20px;
+		}
 	}
 	&__card-heading {
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
 		align-items: center;
+		transition: all 0.3s ease-in-out;
+		cursor: pointer;
 	}
 	&__card-name {
 		width: 100%;
@@ -67,10 +78,84 @@
 			margin-right: 30px;
 		}
 	}
-	&__card-value svg path {
-		fill: #FD8BA3;
+	&__card-link {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: 40px;
+		height: 40px;
+		border-radius: 50%;
+		border: 1px solid #FD8BA3;
+		transition: all 0.3s ease-in-out;
+		&:hover, &:active, &:focus {
+			background-color: #FD8BA3;
+			.icon--price {
+				fill: #fff;
+			}
+		}
 	}
 	.icon--price {
-		fill: #fff;
+		fill: #FD8BA3;
+		transition: all 0.3s ease-in-out;
+	}
+	&__body {
+		padding: 57px 0 63px 50px;
+		transition: all 0.3s ease-in-out;
+	}
+	&__card-collapse {
+		display: none;
+	}
+	&__card.active &__card-collapse {
+		display: block;
+	}
+	&__card.active &__card-link {
+		background-color: #FD8BA3;
+		.icon--price {
+			fill: #fff;
+			transform: rotate(-90deg);
+		}
+	}
+	&__body-title {
+		display: block;
+		font-family: 'Prata', sans-serif;
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 1.5;
+		color: $gray-color;
+		margin-bottom: 23px;
+	}
+	&__body-text {
+		display: block;
+		margin: 0;
+		margin-bottom: 43px;
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 1.7;
+		color: $gray-color;
+	}
+	&__body-list ul {
+		padding-left: 20px;
+	}
+	&__body-list ul li {
+		position: relative;
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 1.7;
+		color: $gray-color;
+		&::before {
+			content: '';
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			left: -15px;
+			width: 5px;
+			height: 5px;
+			border-radius: 50%;
+			background-color: #FD8BA3;
+		}
+	}
+	&__body-list ul li:not(:last-child) {
+		margin-bottom: 30px;
 	}
 }

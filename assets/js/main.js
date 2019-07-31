@@ -75,7 +75,23 @@ $(document.body).on('click','[data-toggle="dismiss"]',function(e) {
 });
 
 
+$('.price-block__card-heading').click( function () {
+    $(this).toggleClass('in').next().stop().slideToggle(300).parent().toggleClass('active');
+});
 
+$('[data-toggle="price-tab"]').click(function(e) {
+ e.preventDefault();
+ 
+ var thisTarget = $(this).attr('data-target');
+ 
+ if ($(this).parent().is('li')) {
+  $(this).parent().addClass('active').siblings().removeClass('active');
+ } else {
+  $(this).addClass('active').siblings().removeClass('active');
+ }
+ 
+ $(thisTarget).addClass('active').siblings().removeClass('active');
+});
 
 
 
