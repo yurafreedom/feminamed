@@ -93,5 +93,14 @@ $('[data-toggle="price-tab"]').click(function(e) {
  $(thisTarget).addClass('active').siblings().removeClass('active');
 });
 
-
+$(document).ready(function () {
+  var mySwiper = new Swiper ('.swiper-container', {
+    direction: 'horizontal',
+    loop: true,
+	  navigation: {
+	    nextEl: '.swiper-button-next',
+	    prevEl: '.swiper-button-prev',
+	  },
+  })
+});
 

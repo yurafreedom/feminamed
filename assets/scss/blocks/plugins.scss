@@ -1,0 +1,39 @@
+.row {
+	width: 100%;
+}
+
+.swiper-slide {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: flex-start;
+	width: 1170px;
+}
+
+.swiper-button-prev, .swiper-button-next {
+	width: 102px;
+	height: 102px;
+	background-size: cover;
+}
+
+.swiper-button-prev {
+	left: -175px;
+	background-image: url('../img/arrow.svg');
+	background-repeat: no-repeat;
+}
+
+.swiper-button-next {
+	right: -175px;
+	background-image: url('../img/arrow.svg');
+	background-repeat: no-repeat;
+	transform: rotate(180deg);
+}
+
+@include for-size(xl) {
+	.swiper-button-prev {
+		left: -100px;
+	}
+	.swiper-button-next {
+		right: -100px;
+	}
+}

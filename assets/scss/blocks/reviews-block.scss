@@ -1,4 +1,8 @@
 .reviews-block {
+	margin-bottom: 96px;
+	&__wrapper {
+		margin-bottom: 70px;
+	}
 	&__title {
 		display: block;
 		text-align: center;
@@ -51,12 +55,14 @@
 		color: $gray-color;
 	}
 	&__comment-block {
+		box-sizing: border-box;
 		position: relative;
 		display: flex;
 		flex-direction: row;
 		padding: 30px;
 		background-color: #FFE4E1;
 		border-radius: 2px;
+		max-width: 970px;
 		&::before {
 			content: '';
 			top: 18px;

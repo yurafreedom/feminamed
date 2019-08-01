@@ -19,7 +19,6 @@
 
 	font-family: 'OpenSans', sans-serif;
 	font-size: 14px;
-	line-height: 1.35;
 	letter-spacing: 0.025em;
 	font-weight: 700;
 	
@@ -59,22 +58,16 @@
 
 .btn--specialists {
 	width: 250px;
+	margin: 0 auto;
 }
 
 .btn--price {
 	box-sizing: border-box;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
 	width: auto;
-	border-radius: 50px;
 	background-color: #f5f5f5;
-	font-size: 14px;
-	line-height: 1.35;
+	font-weight: 400;
 	letter-spacing: 0.1em;
-	text-transform: uppercase;
-	color: #4F4F4F;
+	color: $gray-color;
 	padding-top: 20px;
 	padding-left: 26px;
 	padding-right: 26px;
@@ -85,5 +78,35 @@
 		border: 2px solid #FD8BA3;
 		color: #FD8BA3;
 		background-color: #fff;
+	}
+}
+
+.btn--reception {
+	display: flex;
+	flex-direction: row;
+	width: 165px;
+	background-color: #fff;
+	font-size: 12px;
+	letter-spacing: 0.1em;
+	font-weight: 600;
+	color: #1B1B1B;
+	padding: 0;
+	span {
+		padding-left: 20px;
+		padding-right: 15px;
+	}
+	.icon--reception {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		border-radius: 50%;
+		width: 40px;
+		height: 40px;
+		margin-right: 5px;
+		background-color: #FD8BA3;
+	}
+	svg {
+		fill: #fff;
 	}
 }

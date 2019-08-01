@@ -14,7 +14,7 @@
 	background: none;
 	overflow: hidden;
 
-	height: 65px;
+	height: 60px;
 	line-height: normal;
 	color: #000;
 	font-weight: 400;
@@ -54,7 +54,11 @@
   } @else if $size == desktop {
     @media (min-width: 1200px) { @content; }
   } @else if $size == xl {
+    @media (min-width: 1440px) { @content; }
+  } @else if $size == xxl {
     @media (min-width: 1600px) { @content; }
+  } @else if $size == xxxl {
+    @media (min-width: 1920px) { @content; }
   }
 }
 
