@@ -37,21 +37,24 @@
 		margin-bottom: 38px;
 		font-size: 16px;
 		line-height: 1.75;
+		color: $gray-color;
 	}
 	&__form {
 		display: flex;
 		flex-direction: row;
 		justify-content: center;
-		margin-bottom: 20px;
+		flex-wrap: wrap;
+		max-width: 965px;
 	}
 	&__input {
 		width: 370px;
-		margin-right: 30px;
 		border-radius: 2px;
 		font-size: 14px;
 		font-weight: 400;
 		line-height: 1.35;
 		color: #1b1b1b;
+		padding-left: 20px;
+		padding-right: 20px;
 		&::placeholder {
 			font-size: 14px;
 			font-weight: 400;
@@ -61,8 +64,10 @@
 		}
 	}
 	&__consent {
-		display: block;
-		text-align: center;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		order: 1;
 		font-size: 12px;
 		font-weight: 400;
 		font-style: italic;
@@ -71,6 +76,16 @@
 		a {
 			text-decoration: underline;
 			color: $gray-color;
+			padding-left: 4px;
 		}
+	}
+	.input-wrapper {
+		width: 100%;
+		max-width: 370px;
+		margin-right: 30px;
+	}
+	.btn--reception {
+		order: 1;
+		margin-bottom: 20px;
 	}
 }

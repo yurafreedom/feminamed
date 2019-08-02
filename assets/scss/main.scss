@@ -21,8 +21,13 @@
 @import "blocks/equipment-block";
 @import "blocks/reviews-block";
 @import "blocks/reception-block";
-
+@import "blocks/doctors-block";
+@import "blocks/doctors-inner-block";
+@import "blocks/programs-block";
+@import "blocks/programs-inner-block";
+@import "blocks/description-block";
 @import "blocks/page-footer";
+@import "blocks/media";
 
 body,html {
 	-webkit-overflow-scrolling : touch !important;

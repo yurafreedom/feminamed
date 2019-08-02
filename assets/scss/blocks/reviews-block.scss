@@ -1,5 +1,5 @@
 .reviews-block {
-	margin-bottom: 96px;
+	margin-bottom: 100px;
 	&__wrapper {
 		margin-bottom: 70px;
 	}
@@ -36,6 +36,11 @@
 			backface-visibility: hidden;
 		} 
 	}
+	&__author-inner {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
 	&__author-name {
 		display: block;
 		text-align: center;
@@ -53,6 +58,9 @@
 		line-height: 1.7;
 		font-weight: 400;
 		color: $gray-color;
+	}
+	&__mobile-inner {
+		display: none;
 	}
 	&__comment-block {
 		box-sizing: border-box;
@@ -96,6 +104,11 @@
 			backface-visibility: hidden;
 		}
 	}
+	&__specialist-inner {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
 	&__specialist-name {
 		display: block;
 		text-align: center;
@@ -104,6 +117,9 @@
 		line-height: 1.375;
 		color: $gray-color;
 		margin-bottom: 15px;
+		span {
+			text-transform: uppercase;
+		}
 	}
 	&__specialist-position {
 		display: block;
@@ -124,5 +140,14 @@
 		font-weight: 400;
 		line-height: 1.7;
 		color: $gray-color;
+	}
+	&__comment-link {
+		display: none;
+		text-align: center;
+		font-size: 14px;
+		font-weight: 600;
+		line-height: 1.35;
+		color: #FD8BA3;
+		text-decoration: underline;
 	}
 }

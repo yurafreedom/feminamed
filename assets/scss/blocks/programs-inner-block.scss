@@ -1,0 +1,56 @@
+.programs {
+	.btn--price {
+		&:first-child {
+			width: auto;
+		}
+	}
+	.reviews-block {
+		margin-top: 85px;
+	}
+	.reviews-block__wrapper {
+		margin-bottom: 0;
+	}
+}
+
+.programs-inner-block {
+	padding-top: 260px;
+	&__content-block {
+		width: 100vw;
+		max-width: 1820px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-top: 25px;
+		margin-bottom: 100px;
+		padding-top: 70px;
+		padding-bottom: 100px;
+		background-color: #FFE4E1;
+	}
+	&__content-title {
+		display: block;
+		text-align: center;
+		margin-bottom: 20px;
+		font-family: 'Prata', sans-serif;
+		font-size: 30px;
+		font-weight: 400;
+		color: #1b1b1b;
+	}
+	&__content-icon {
+		margin-bottom: 14px;
+	}
+	&__content-text {
+		display: block;
+		text-align: center;
+		margin: 0 auto;
+		margin-bottom: 42px;
+		max-width: 970px;
+		width: 100%;
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 1.75;
+		color: $gray-color;
+	}
+	.programs-block__card-price {
+		margin-bottom: 57px;
+	}
+}

@@ -194,48 +194,6 @@
 }
 
 
-@include for-size(mobile) {
-	.page-header {
-		&__top-part {
-			padding-bottom: 15px;
-		}
-		&__logo {
-			width: 190px;
-		}
-		&__location-block, &__time-block, &__request-block, &__nav {
-			display: none;
-		}
-		&__toggle {
-			display: flex;
-		}
-	}
-}
-
-
-@include for-size(tablet) {
-	.page-header {
-		&__logo {
-			width: 240px;
-		}
-		&__time-block, &__toggle {
-			display: none;
-		}
-		&__nav li:not(:last-child) {
-			margin-right: 45px;
-		}
-	}
-}
-
-
-@include for-size(desktop) {
-	.page-header {
-		&__toggle {
-			display: none;
-		}
-	}
-}
-
-
 
 
 

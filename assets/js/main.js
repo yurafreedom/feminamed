@@ -104,3 +104,10 @@ $(document).ready(function () {
   })
 });
 
+// if ($('.price-block__nav-block').length > 0) {
+//     var thisCurrentPos = $('.btn.btn--price').offset().left - 20;
+
+//     $('.price-block__nav-block').animate({
+//     scrollLeft: thisCurrentPos
+//     }, 100);
+// };

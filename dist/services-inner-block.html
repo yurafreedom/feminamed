@@ -36,7 +36,7 @@
 		<div class="row">
 			<div class="page-header__row">
 				<div class="page-header__top-part">
-					<a href="#" class="page-header__logo">
+					<a href="index.html" class="page-header__logo">
 						<img src="img/logo.png" alt="">
 					</a>
 					<div class="page-header__location-block">
@@ -118,12 +118,14 @@
 				<div class="row">
 					<div class="col-12">
 						<h3 class="price-block__title">Стоимость услуг</h3>
-						<div class="price-block__nav-block">
-							<button class="btn btn--price" type="button" data-toggle="price-tab" data-target="#price-tab-1">Акции</button>
-							<button class="btn btn--price" type="button" data-toggle="price-tab" data-target="#price-tab-2">Прием врача</button>
-							<button class="btn btn--price" type="button" data-toggle="price-tab" data-target="#price-tab-3">Диагностика</button>
-							<button class="btn btn--price" type="button" data-toggle="price-tab" data-target="#price-tab-4">Манипуляции и процедуры</button>
-							<button class="btn btn--price" type="button" data-toggle="price-tab" data-target="#price-tab-5">Гинекологические анализы</button>
+						<div class="price-block__nav-wrapper">
+							<div class="price-block__nav-block">
+								<button class="btn btn--price" type="button" data-toggle="price-tab" data-target="#price-tab-1">Акции</button>
+								<button class="btn btn--price" type="button" data-toggle="price-tab" data-target="#price-tab-2">Прием врача</button>
+								<button class="btn btn--price" type="button" data-toggle="price-tab" data-target="#price-tab-3">Диагностика</button>
+								<button class="btn btn--price" type="button" data-toggle="price-tab" data-target="#price-tab-4">Манипуляции и процедуры</button>
+								<button class="btn btn--price" type="button" data-toggle="price-tab" data-target="#price-tab-5">Гинекологические анализы</button>
+							</div>
 						</div>
 						<div class="price-block__tab-content active" id="price-tab-1">
 							<div class="price-block__list">
@@ -1237,7 +1239,7 @@
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-xl-3">
+					<div class="col-12 col-md-6 col-xl-3">
 						<div class="specialists-block__card">
 							<div class="specialists-block__card-photo">
 								<img src="img/photo-specialist.png" alt="">
@@ -1246,7 +1248,7 @@
 							<span class="specialists-block__card-position">Врач-гинеколог</span>
 						</div>
 					</div>
-					<div class="col-xl-3">
+					<div class="col-12 col-md-6 col-xl-3">
 						<div class="specialists-block__card">
 							<div class="specialists-block__card-photo">
 								<img src="img/photo-specialist.png" alt="">
@@ -1255,7 +1257,7 @@
 							<span class="specialists-block__card-position">Врач-гинеколог</span>
 						</div>
 					</div>
-					<div class="col-xl-3">
+					<div class="col-12 col-md-6 col-xl-3">
 						<div class="specialists-block__card">
 							<div class="specialists-block__card-photo">
 								<img src="img/photo-specialist.png" alt="">
@@ -1264,7 +1266,7 @@
 							<span class="specialists-block__card-position">Врач-гинеколог</span>
 						</div>
 					</div>
-					<div class="col-xl-3">
+					<div class="col-12 col-md-6 col-xl-3">
 						<div class="specialists-block__card">
 							<div class="specialists-block__card-photo">
 								<img src="img/photo-specialist.png" alt="">
@@ -1309,74 +1311,114 @@
 									<div class="swiper-wrapper">
 										<div class="swiper-slide">
 											<div class="row">
-												<div class="col-xl-2">
+												<div class="col-12 col-md-2 col-xl-2">
 													<div class="reviews-block__author-block">
 														<div class="reviews-block__author-photo">
 															<img src="img/photo-review.png" alt="">
 														</div>
-														<span class="reviews-block__author-name">Анастасия</span>
-														<span class="reviews-block__author-date">16.12.2018</span>
+														<div class="reviews-block__author-inner">
+															<span class="reviews-block__author-name">Анастасия</span>
+															<span class="reviews-block__author-date">16.12.2018</span>
+															<div class="reviews-block__mobile-inner">
+																<span class="reviews-block__mobile-name">Иванова<br> Мария Ивановна</span>
+																<span class="reviews-block__mobile-status">Сын Егор, 2 года</span>
+															</div>
+														</div>
 													</div>
 												</div>
-												<div class="col-xl-9">
+												<div class="col-12 col-md-9 col-xl-9">
 													<div class="reviews-block__comment-block">
 														<div class="reviews-block__specialist-block">
 															<div class="reviews-block__specialist-photo">
 																<img src="img/photo-specialist.png" alt="">
 															</div>
-															<h3 class="reviews-block__specialist-name"><span>Иванова</span><br>Мария Ивановна</h3>
-															<span class="reviews-block__specialist-position">Ведущий акушер-гинеколог, Врач УЗД</span>
+															<div class="reviews-block__specialist-inner">
+																<h3 class="reviews-block__specialist-name"><span>Иванова</span><br>Мария Ивановна</h3>
+																<span class="reviews-block__specialist-position">Ведущий<br>акушер-гинеколог,<br>Врач УЗИ</span>
+															</div>
 														</div>
 														<div class="reviews-block__comment-content">
 															<p class="reviews-block__comment-text">Огромную благодарность выражаю Толстошеевой Виктории Владимировне за ведение беременности. грамотный, доброжелательный и внимательный специалист. Очень рада, что вела беременность именно у неё. Да и в выборе самой клиники в Бутово не ошиблась. Внимательный и радушный персонал. Всем рекомендую</p>
+															<a class="reviews-block__comment-link" href="#">Читать дальше</a>
 														</div>
 													</div>
 												</div>
 											</div>
 										</div>
 										<div class="swiper-slide">
-											<div class="reviews-block__author-block">
-												<div class="reviews-block__author-photo">
-													<img src="img/photo-review.png" alt="">
-												</div>
-												<span class="reviews-block__author-name">Анастасия</span>
-												<span class="reviews-block__author-date">16.12.2018</span>
-											</div>
-											<div class="reviews-block__comment-block">
-												<div class="reviews-block__specialist-block">
-													<div class="reviews-block__specialist-photo">
-														<img src="img/photo-specialist.png" alt="">
+											<div class="row">
+												<div class="col-12 col-md-2 col-xl-2">
+													<div class="reviews-block__author-block">
+														<div class="reviews-block__author-photo">
+															<img src="img/photo-review.png" alt="">
+														</div>
+														<div class="reviews-block__author-inner">
+															<span class="reviews-block__author-name">Анастасия</span>
+															<span class="reviews-block__author-date">16.12.2018</span>
+															<div class="reviews-block__mobile-inner">
+																<span class="reviews-block__mobile-name">Иванова<br> Мария Ивановна</span>
+																<span class="reviews-block__mobile-status">Сын Егор, 2 года</span>
+															</div>
+														</div>
 													</div>
-													<h3 class="reviews-block__specialist-name"><span>Иванова</span><br>Мария Ивановна</h3>
-													<span class="reviews-block__specialist-position">Ведущий акушер-гинеколог, Врач УЗД</span>
 												</div>
-												<div class="reviews-block__comment-content">
-													<p class="reviews-block__comment-text">Огромную благодарность выражаю Толстошеевой Виктории Владимировне за ведение беременности. грамотный, доброжелательный и внимательный специалист. Очень рада, что вела беременность именно у неё. Да и в выборе самой клиники в Бутово не ошиблась. Внимательный и радушный персонал. Всем рекомендую</p>
+												<div class="col-12 col-md-9 col-xl-9">
+													<div class="reviews-block__comment-block">
+														<div class="reviews-block__specialist-block">
+															<div class="reviews-block__specialist-photo">
+																<img src="img/photo-specialist.png" alt="">
+															</div>
+															<div class="reviews-block__specialist-inner">
+																<h3 class="reviews-block__specialist-name"><span>Иванова</span><br>Мария Ивановна</h3>
+																<span class="reviews-block__specialist-position">Ведущий акушер-гинеколог, Врач УЗИ</span>
+															</div>
+														</div>
+														<div class="reviews-block__comment-content">
+															<p class="reviews-block__comment-text">Огромную благодарность выражаю Толстошеевой Виктории Владимировне за ведение беременности. грамотный, доброжелательный и внимательный специалист. Очень рада, что вела беременность именно у неё. Да и в выборе самой клиники в Бутово не ошиблась. Внимательный и радушный персонал. Всем рекомендую</p>
+															<a class="reviews-block__comment-link" href="#">Читать дальше</a>
+														</div>
+													</div>
 												</div>
 											</div>
 										</div>
 										<div class="swiper-slide">
-											<div class="reviews-block__author-block">
-												<div class="reviews-block__author-photo">
-													<img src="img/photo-review.png" alt="">
-												</div>
-												<span class="reviews-block__author-name">Анастасия</span>
-												<span class="reviews-block__author-date">16.12.2018</span>
-											</div>
-											<div class="reviews-block__comment-block">
-												<div class="reviews-block__specialist-block">
-													<div class="reviews-block__specialist-photo">
-														<img src="img/photo-specialist.png" alt="">
+											<div class="row">
+												<div class="col-12 col-md-2 col-xl-2">
+													<div class="reviews-block__author-block">
+														<div class="reviews-block__author-photo">
+															<img src="img/photo-review.png" alt="">
+														</div>
+														<div class="reviews-block__author-inner">
+															<span class="reviews-block__author-name">Анастасия</span>
+															<span class="reviews-block__author-date">16.12.2018</span>
+															<div class="reviews-block__mobile-inner">
+																<span class="reviews-block__mobile-name">Иванова<br> Мария Ивановна</span>
+																<span class="reviews-block__mobile-status">Сын Егор, 2 года</span>
+															</div>
+														</div>
 													</div>
-													<h3 class="reviews-block__specialist-name"><span>Иванова</span><br>Мария Ивановна</h3>
-													<span class="reviews-block__specialist-position">Ведущий акушер-гинеколог, Врач УЗД</span>
 												</div>
-												<div class="reviews-block__comment-content">
-													<p class="reviews-block__comment-text">Огромную благодарность выражаю Толстошеевой Виктории Владимировне за ведение беременности. грамотный, доброжелательный и внимательный специалист. Очень рада, что вела беременность именно у неё. Да и в выборе самой клиники в Бутово не ошиблась. Внимательный и радушный персонал. Всем рекомендую</p>
+												<div class="col-12 col-md-9 col-xl-9">
+													<div class="reviews-block__comment-block">
+														<div class="reviews-block__specialist-block">
+															<div class="reviews-block__specialist-photo">
+																<img src="img/photo-specialist.png" alt="">
+															</div>
+															<div class="reviews-block__specialist-inner">
+																<h3 class="reviews-block__specialist-name"><span>Иванова</span><br>Мария Ивановна</h3>
+																<span class="reviews-block__specialist-position">Ведущий акушер-гинеколог, Врач УЗИ</span>
+															</div>
+														</div>
+														<div class="reviews-block__comment-content">
+															<p class="reviews-block__comment-text">Огромную благодарность выражаю Толстошеевой Виктории Владимировне за ведение беременности. грамотный, доброжелательный и внимательный специалист. Очень рада, что вела беременность именно у неё. Да и в выборе самой клиники в Бутово не ошиблась. Внимательный и радушный персонал. Всем рекомендую</p>
+															<a class="reviews-block__comment-link" href="#">Читать дальше</a>
+														</div>
+													</div>
 												</div>
 											</div>
 										</div>
 									</div>
+									<div class="swiper-pagination"></div>
 								</div>
 								<div class="swiper-button-next"></div>
 							</div>
@@ -1406,11 +1448,11 @@
 										<div class="icon--reception">
 											<svg width="22" height="12">
 												<use xlink:href="#price_arrow"></use>
-											</svg>						
+											</svg>
 										</div>
 									</button>
+									<span class="reception-block__consent">Нажав на кнопку, я даю согласие на <a href="#">обработку персональных данных</a></span>
 								</form>
-								<span class="reception-block__consent">Нажав на кнопку, я даю согласие на<a href="#"> обработку персональных данных</a></span>
 							</div>
 						</div>
 					</div>
@@ -1498,6 +1540,9 @@
 	<symbol id="scroll" width="32" height="32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17 4.647l-.853-.853V28.54a.145.145 0 0 1-.147.148.145.145 0 0 1-.147-.148V3.794l-.854.853-4.83 4.831a.143.143 0 0 1-.209 0 .143.143 0 0 1 0-.208l5.936-5.936A.154.154 0 0 1 16 3.291c.036 0 .077.016.104.043L22.04 9.27c.06.06.06.148 0 .208a.143.143 0 0 1-.208 0L17 4.648z" stroke="#4F4F4F"/></symbol>
 	<symbol id="scroll_mob" width="10" height="18" fill="none" xmlns="http://www.w3.org/2000/svg"><mask id="a" fill="#fff"><path d="M5 17.08c.225 0 .404-.18.404-.405V1.962l3.02 3.02c.16.16.412.16.572 0a.402.402 0 0 0 0-.572L5.286.7A.409.409 0 0 0 5 .58.409.409 0 0 0 4.714.7l-3.71 3.71a.402.402 0 0 0 0 .572c.16.16.413.16.572 0l3.02-3.02v14.713c0 .225.18.405.404.405z"/></mask><path d="M5.404 1.962l.708-.707L4.404-.452v2.414h1zm3.02 3.02l.707-.707-.707.707zm.572-.572l.707-.707-.707.707zM5.286.7l-.707.707L5.286.7zm-.572 0l.707.707L4.714.7zm-3.71 3.71l-.707-.707.707.707zm.572.572l-.707-.707.707.707zm3.02-3.02h1V-.452L3.887 1.255l.707.707zM5 18.08c.777 0 1.404-.628 1.404-1.405h-2c0-.327.268-.595.596-.595v2zm1.404-1.405V1.962h-2v14.713h2zM4.697 2.67l3.02 3.019L9.13 4.275l-3.02-3.02L4.698 2.67zm3.02 3.019c.55.55 1.436.55 1.986 0L8.289 4.275a.598.598 0 0 1 .842 0L7.717 5.689zm1.986 0c.55-.55.55-1.436 0-1.986L8.289 5.117a.598.598 0 0 1 0-.842l1.414 1.414zm0-1.986l-3.71-3.71-1.414 1.414 3.71 3.71 1.414-1.414zm-3.71-3.71A1.409 1.409 0 0 0 5-.42v2a.591.591 0 0 1-.421-.174L5.993-.007zM5-.42c-.358 0-.721.14-.993.412L5.42 1.407A.591.591 0 0 1 5 1.581v-2zm-.993.412l-3.71 3.71L1.71 5.117l3.71-3.71L4.007-.007zm-3.71 3.71c-.55.55-.55 1.436 0 1.986L1.71 4.275a.598.598 0 0 1 0 .842L.297 3.703zm0 1.986c.55.55 1.436.55 1.986 0L.87 4.275a.598.598 0 0 1 .842 0L.297 5.689zm1.986 0l3.02-3.02-1.415-1.414-3.02 3.02 1.415 1.414zm1.312-3.727v14.713h2V1.962h-2zm0 14.713c0 .777.628 1.405 1.405 1.405v-2c.327 0 .595.268.595.595h-2z" fill="#4F4F4F" mask="url(#a)"/></symbol>
 	<symbol id="price_arrow" width="22" height="12" xmlns="http://www.w3.org/2000/svg"><path d="M.7 6c0 .287.23.518.519.518H20.05l-3.865 3.864a.515.515 0 0 0 0 .733.514.514 0 0 0 .733 0l4.748-4.75c.1-.098.152-.234.152-.365a.523.523 0 0 0-.152-.366L16.92.885a.514.514 0 0 0-.733 0 .514.514 0 0 0 0 .732l3.865 3.865H1.22A.516.516 0 0 0 .7 6z"/></symbol>
+	<symbol id="check_square" width="81" height="80" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0)" fill="#FD8BA3"><path d="M66.341 26.142a1.925 1.925 0 0 0-1.924 1.924v48.085H3.864V15.599h47.082a1.924 1.924 0 0 0 0-3.849H1.94a1.925 1.925 0 0 0-1.924 1.925v64.4C.016 79.138.877 80 1.94 80h64.401a1.925 1.925 0 0 0 1.924-1.925V28.066a1.925 1.925 0 0 0-1.924-1.924z"/><path d="M79.451.564a1.924 1.924 0 0 0-2.721 0L25.808 51.486 13.173 38.85a1.924 1.924 0 1 0-2.722 2.721l13.996 13.996c.376.376.868.564 1.361.564s.985-.188 1.36-.564L79.452 3.285a1.924 1.924 0 0 0 0-2.721z"/></g><defs><clipPath id="clip0"><path fill="#fff" transform="translate(.016)" d="M0 0h80v80H0z"/></clipPath></defs></symbol>
+	<symbol id="embryo" width="81" height="80" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0)" fill="#FD8BA3" stroke="#FD8BA3"><path d="M48.215 27.627a1.172 1.172 0 0 0-1.636.268c-.306.426-.9.69-1.553.69-.652 0-1.247-.264-1.553-.69a1.172 1.172 0 0 0-1.904 1.367c.75 1.044 2.042 1.668 3.457 1.668s2.708-.623 3.458-1.668a1.172 1.172 0 0 0-.27-1.635z"/><path d="M68.677 27.216c-.68-7.498-6.583-13.622-14.034-14.561-5.049-.636-9.991 1.045-13.559 4.613-3.568 3.569-5.25 8.51-4.613 13.559.44 3.486 2.07 6.801 4.594 9.334a16.325 16.325 0 0 0 4.472 3.177c-.847.371-1.875.743-2.935 1.125-.497.18-1.01.366-1.535.56l-9.247-7.9a3.318 3.318 0 0 0-4.334-.001 3.313 3.313 0 0 0-1.159 2.275c-.07.888.21 1.75.79 2.428l6.12 7.163c-.95.71-1.78 1.47-2.503 2.29-3.868-1.826-6.57-4.785-7.613-8.349-1.023-3.49-.419-7.235 1.701-10.544 3.334-5.204 1.687-8.498.233-11.404-.608-1.215-1.182-2.362-1.425-3.643-.686-3.606 0-6.683 2.04-9.146 3.4-4.107 9.925-5.71 13.829-5.842 9.362-.127 18.346 3.184 25.366 9.362a1.172 1.172 0 1 0 1.549-1.759C58.79 3.243 48.985-.285 38.807.018a39.832 39.832 0 0 0-27.079 11.695A39.833 39.833 0 0 0 .033 38.792C-.27 48.97 3.26 58.775 9.97 66.398a1.168 1.168 0 0 0 1.654.106 1.172 1.172 0 0 0 .105-1.654C5.412 57.674 2.091 48.445 2.376 38.86a37.495 37.495 0 0 1 11.01-25.49 37.614 37.614 0 0 1 11.682-7.95c-.425.399-.828.823-1.204 1.276-2.506 3.027-3.359 6.754-2.537 11.079.304 1.6.979 2.95 1.631 4.253 1.4 2.799 2.506 5.01-.11 9.092-2.49 3.889-3.193 8.317-1.976 12.468.721 2.463 2.096 4.674 4.006 6.508a6.65 6.65 0 0 0-2.956.826 9.93 9.93 0 0 0-.582.362 1.117 1.117 0 0 0-.078.058l-1.408 1.125a33.2 33.2 0 0 0-.905-1.338 3.143 3.143 0 0 0-3-1.284 3.151 3.151 0 0 0-2.676 3.557c.174 1.234.943 4.715 1.068 5.252 0 0 .056.213.077.265l.13.325a5.097 5.097 0 0 0 .48.863c.355.521.825.991 1.354 1.356a5.355 5.355 0 0 0 3.686.92 5.5 5.5 0 0 0 1.894-.59l1.095-.577 1.803 5.686a7.18 7.18 0 0 0 6.83 5.014c.585 0 1.178-.073 1.77-.224 7.092-1.816 20.325-8.105 29.254-29.82.205-.498.544-.976 1.009-1.419 3.6-3.433 5.406-8.258 4.954-13.238zm-6.572 11.542c-.703.671-1.228 1.42-1.559 2.224-8.54 20.769-21 26.733-27.668 28.44-2.469.632-5.01-.785-5.784-3.227l-2.227-7.023a1.172 1.172 0 0 0-1.664-.682l-2.328 1.229c-.346.18-.716.296-1.078.337a3.019 3.019 0 0 1-2.837-1.276 2.808 2.808 0 0 1-.246-.433l-.094-.236c-.158-.68-.873-3.95-1.026-5.035a.804.804 0 0 1 1.45-.58c.51.715.977 1.446 1.52 2.324a1.172 1.172 0 0 0 1.728.299l2.393-1.913c.128-.085.26-.166.392-.243a4.32 4.32 0 0 1 .892-.363 4.48 4.48 0 0 1 1.96-.103c1.31.214 2.523 1.057 3.166 2.2.17.303.305.616.405.94l.147.463 1.206 4.254a1.172 1.172 0 0 0 2.255-.639l-1.21-4.272a.943.943 0 0 0-.012-.036l-.15-.473a6.96 6.96 0 0 0-.28-.746c.831-1.271 1.922-2.397 3.308-3.412l1.59 1.86c.297.346.677.615 1.099.78.328.136 3.374 1.343 8.789 1.515h.038a1.172 1.172 0 0 0 .036-2.343c-5.129-.162-7.938-1.326-7.963-1.337a1.277 1.277 0 0 0-.047-.019.439.439 0 0 1-.173-.121l-9.235-10.808a.986.986 0 0 1-.234-.722.986.986 0 0 1 .344-.677.998.998 0 0 1 1.289 0l9.67 8.263c.224.191.512.291.806.28 2.433-.095 5.003.302 7.64 1.181a1.172 1.172 0 0 0 .741-2.223c-.988-.33-1.97-.597-2.943-.803.879-.37 1.63-.752 2.221-1.193.64.168 1.292.296 1.949.381 1.132.147 2.274.179 3.394.094a1.172 1.172 0 0 0-.176-2.337c-.961.073-1.943.045-2.917-.081-2.632-.341-5.057-1.467-7.027-3.124 1.106-.426 2.003-1.204 2.495-2.202a1.172 1.172 0 1 0-2.102-1.036c-.301.61-.997 1.073-1.817 1.21-.174.028-.347.04-.518.038-1.55-1.935-2.598-4.28-2.917-6.817-.545-4.325.892-8.556 3.945-11.609 3.052-3.052 7.284-4.49 11.608-3.945 6.368.803 11.412 6.037 11.993 12.447.388 4.263-1.157 8.393-4.237 11.33z"/><path d="M70.063 13.602a1.172 1.172 0 0 0-1.76 1.548c6.316 7.176 9.638 16.406 9.352 25.989a37.496 37.496 0 0 1-11.01 25.491 37.497 37.497 0 0 1-25.49 11.01c-9.584.284-18.813-3.037-25.989-9.352a1.172 1.172 0 0 0-1.548 1.76 39.827 39.827 0 0 0 27.606 9.934 39.83 39.83 0 0 0 27.08-11.695 39.832 39.832 0 0 0 11.694-27.079c.303-10.179-3.225-19.983-9.935-27.606z"/></g><defs><clipPath id="clip0"><path fill="#fff" transform="translate(.016)" d="M0 0h80v80H0z"/></clipPath></defs></symbol>
+	<symbol id="maternity" width="81" height="80" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0)" fill="#FD8BA3"><path d="M42.807 54.141a5.496 5.496 0 0 0-2.897.833 5.495 5.495 0 0 0-2.897-.833c-3.062 0-5.553 2.537-5.553 5.655 0 1.769 1.277 3.898 3.904 6.51a41.116 41.116 0 0 0 3.596 3.162 1.563 1.563 0 0 0 1.9 0 41.096 41.096 0 0 0 3.596-3.162c2.627-2.612 3.904-4.741 3.904-6.51 0-3.118-2.492-5.655-5.553-5.655zm-2.898 12.084c-2.72-2.253-5.32-5.147-5.32-6.429 0-1.393 1.087-2.527 2.424-2.527.665 0 1.286.276 1.747.777a1.564 1.564 0 0 0 2.3 0 2.359 2.359 0 0 1 1.747-.777c1.337 0 2.424 1.134 2.424 2.527 0 1.279-2.602 4.173-5.322 6.43z"/><path d="M37.84 42.137c-1.015-.875-2.225-1.256-3.409-1.073-7.35 1.136-10.854 6.881-11 7.125a1.564 1.564 0 0 0 2.686 1.603c.029-.047 2.88-4.723 8.792-5.637.355-.054.708.197.888.351.552.477.936 1.27.932 1.928a1.463 1.463 0 0 1-.996 1.385c-2.915.97-4.923 2.12-5.968 3.421l-5.989 7.454c-.617.769-1.47 1.194-2.334 1.165a1.15 1.15 0 0 1-.883-.402c-1.504-1.644-1.206-7-1.079-9.288.02-.354.037-.673.05-.95.612-14.132 6.123-18.157 14.816-20.071l.538-.119a1.564 1.564 0 1 0-.673-3.054l-.538.118c-5.779 1.273-9.74 3.456-12.468 6.872-2.96 3.705-4.485 8.827-4.8 16.118-.012.266-.03.573-.048.912-.241 4.334-.314 9.16 1.895 11.574a4.288 4.288 0 0 0 3.087 1.416 5.4 5.4 0 0 0 .516-.007 17.12 17.12 0 0 0 1.725 7.275 1.564 1.564 0 1 0 2.814-1.367 14.03 14.03 0 0 1-1.415-6.18v-.867a6.55 6.55 0 0 0 1.235-1.186l5.989-7.453c.634-.79 2.28-1.669 4.517-2.413a4.59 4.59 0 0 0 3.137-4.335c.01-1.58-.764-3.234-2.018-4.315zM28.867 72.456l-.04-.043a1.564 1.564 0 1 0-2.284 2.138l.067.07c.307.32.718.482 1.129.482a1.564 1.564 0 0 0 1.128-2.647zM53.8 29.059a23.54 23.54 0 0 0-7.396-3.091 1.564 1.564 0 0 0-.7 3.048 20.425 20.425 0 0 1 6.416 2.681 1.563 1.563 0 0 0 1.68-2.639zM58.18 32.669l-.082-.086a1.564 1.564 0 1 0-2.25 2.172l.07.073c.307.322.719.484 1.132.484a1.564 1.564 0 0 0 1.131-2.643zM61.683 37.388a1.563 1.563 0 1 0-2.724 1.537c1.578 2.795 1.703 6.071 1.703 10.064v4.766c0 5.503-1.26 13.232-7.264 18.805-1.1 1.02-3.213 2.054-6.112 2.99a58.12 58.12 0 0 1-.306.082 2.473 2.473 0 0 1-1.969-.433 2.468 2.468 0 0 1-1.022-2.02 2.482 2.482 0 0 1 1.79-2.388c2.776-.822 4.77-1.784 5.929-2.858 4.129-3.832 3.915-9.764 3.727-14.997a90.442 90.442 0 0 1-.08-3.238c0-.112-.012-.22-.034-.325a5.9 5.9 0 0 0 .643-1.866c.473-2.918-1.42-5.384-2.943-7.366-.601-.783-1.51-1.967-1.519-2.387a1.564 1.564 0 0 0-3.128 0c0 1.471 1.004 2.779 2.167 4.292 1.215 1.583 2.592 3.376 2.336 4.96-.167 1.03-1.039 2.084-2.59 3.133a1.564 1.564 0 0 0 1.751 2.59c.087-.058.17-.117.254-.176l.017.495c.172 4.786.35 9.734-2.729 12.592-.779.723-2.444 1.487-4.688 2.152a5.59 5.59 0 0 0-4.03 5.38 5.564 5.564 0 0 0 1.169 3.452c-1.792.24-2.87.249-2.887.249-2.3 0-4.583-.564-6.602-1.63a1.564 1.564 0 0 0-1.46 2.767A17.334 17.334 0 0 0 39.143 80c.149 0 3.597-.015 8.59-1.332.106-.024.211-.054.317-.085l.096-.025.024-.008c.014-.005.029-.008.043-.012 3.395-1.093 5.855-2.332 7.313-3.685 5.406-5.018 8.264-12.313 8.264-21.097v-4.767c0-4.305-.159-8.15-2.108-11.601zM39.926 0c-1.8 0-3.508.397-5.045 1.103a6.44 6.44 0 0 0-8.761 1.492 6.44 6.44 0 0 0 1.324 9c.112.082.23.147.353.196-.003.115-.008.23-.008.346v1.922c0 6.693 5.444 12.137 12.137 12.137 6.692 0 12.137-5.444 12.137-12.137v-1.922C52.063 5.445 46.618 0 39.926 0zM28.63 4.461a3.306 3.306 0 0 1 3.131-1.297 12.17 12.17 0 0 0-3.297 4.989 3.308 3.308 0 0 1 .166-3.692zm11.296 18.607c-4.627 0-8.448-3.506-8.952-8 2.353-.177 7.446-.907 10.826-3.912 2.337 2.622 5.532 3.528 7.088 3.826-.464 4.536-4.306 8.086-8.962 8.086zm3.367-15.153a1.564 1.564 0 0 0-2.61-.143c-2.342 3.168-7.43 3.96-9.761 4.159.11-4.873 4.105-8.803 9.003-8.803 4.852 0 8.819 3.856 9 8.664-1.514-.37-4.163-1.356-5.632-3.877z"/></g><defs><clipPath id="clip0"><path fill="#fff" transform="translate(.016)" d="M0 0h80v80H0z"/></clipPath></defs></symbol>
 </svg>
 <div class="popup-block" id="popup-id">
 	<div class="popup-block__overlay">
