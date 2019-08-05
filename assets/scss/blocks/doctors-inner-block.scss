@@ -1,22 +1,13 @@
 .doctors-inner-block {
-	padding-top: 260px;
-	.services-block__breadcrumbs-block ul {
-		justify-content: flex-start;
-		margin-left: 126px;
-	}
-	&__content-wrapper {
-		width: 100vw;
-		max-width: 1820px;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		margin-top: 25px;
-		margin-bottom: 100px;
+	margin-top: 25px;
+	margin-bottom: 100px;
+	padding-left: 50px;
+	padding-right: 50px;
+	&__content-background {
 		background-color: #FFE4E1;
 	}
 	&__content-block {
 		width: 100%;
-		max-width: 1170px;
 		display: flex;
 		flex-direction: row;
 		padding-top: 71px;

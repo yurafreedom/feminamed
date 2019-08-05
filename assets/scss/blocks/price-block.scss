@@ -18,13 +18,7 @@
 		flex-direction: row;
 		justify-content: flex-start;
 		align-items: flex-start;
-		margin-bottom: 50px;
-	}
-	&__nav-block .btn--price:first-child {
-		width: 170px;
-	}
-	&__nav-block .btn--price {
-		margin-bottom: 15px;
+		margin-bottom: 65px;
 	}
 	&__nav-block .btn--price:not(:last-child) {
 		margin-right: 15px;

@@ -19,14 +19,11 @@
 		color: $gray-color;
 	}
 	&__photo-block {
-		width: 470px;
-		height: 470px;
+		display: block;
 		img {
-			display: block;
-			width: 100%;
-			height: 100%;
-			background-size: cover;
-			backface-visibility: hidden;
+			display: inline-block;
+			max-width: 100%;
+			height: auto;
 		}
 	}
 }

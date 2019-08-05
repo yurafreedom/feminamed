@@ -1,58 +1,15 @@
 .services-block {
-	padding-top: 260px;
-	padding-bottom: 105px;
+	margin-top: 96px;
+	margin-bottom: 105px;
 	&__wrapper {
 		width: 100%;
 		padding-left: 15px;
 		padding-right: 15px;
 	}
-	&__breadcrumbs-block {
-		width: 100%;
-	}
-	&__breadcrumbs-block ul {
-		display: flex;
-		flex-direction: row;
-		justify-content: center;
-		align-items: center;
-	}
-	&__breadcrumbs-block li {
-		position: relative;
-		display: block;
-		&:not(:last-child) {
-			margin-right: 45px;
-			&::after {
-				content: '';
-				position: absolute;
-				top: 50%;
-				transform: translateY(-50%);
-				right: -29px;
-				width: 14px;
-				height: 1px;
-				background-color: #C4C4C4;
-			}
-		}
-		&.active {
-			background-color: #FFE4E1;
-			color: $gray-color;
-			padding: 2px;
-		}
-	}
-	&__breadcrumbs-block li a {
-		font-size: 14px;
-		line-height: 1.35;
-		font-weight: 400;
-		color: $gray-color;
-		transition: all 0.3s ease-in-out;
-		&:hover, &:active, &:focus {
-			text-decoration: none;
-			color: #FFE4E1;
-		}
-	}
 	&__content-block {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		margin-top: 96px;
 		margin-bottom: 52px;
 	}
 	&__content-title {
@@ -77,24 +34,26 @@
 		color: $gray-color;
 	}
 	&__card {
-		display: flex;
-		flex-direction: column;
-		height: calc(100% - 20px);
+		width: 100%;
+		display: block;
 		background-color: #FFE4E1;
 		border-radius: 10px;
 		padding-top: 30px;
+		padding-left: 30px;
+		padding-right: 30px;
 		padding-bottom: 24px;
 		margin-bottom: 30px;
 	}
-	&__card-body {
-		display: flex;
-		flex-direction: column;
-	}
 	&__card-icon {
-		display: flex;
-		flex-direction: row;
-		justify-content: center;
+		display: block;
 		margin-bottom: 22px;
+		img {
+			display: block;
+			margin: 0 auto;
+			width: 80px;
+			height: 80px;
+			object-fit: contain; 
+		}
 	}
 	&__card-inner {
 		display: flex;
@@ -107,10 +66,9 @@
 		margin: 0;
 		font-size: 16px;
 		font-weight: 600;
+		letter-spacing: 0.1em;
+		line-height: 1.375;
 		text-transform: uppercase;
 		color: #4F4F4F;
-		overflow-x: hidden;
-		max-width: 100%;
-		text-shadow: ellipsis;
 	}
 }

@@ -1,0 +1,46 @@
+.breadcrumbs-block {
+	&__list {
+		width: 100%;
+	}
+	&__list ul {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		flex-wrap: wrap;
+	}
+	&__list li {
+		position: relative;
+		display: block;
+		&:not(:last-child) {
+			margin-right: 45px;
+			&::after {
+				content: '';
+				position: absolute;
+				top: 50%;
+				transform: translateY(-50%);
+				right: -29px;
+				width: 14px;
+				height: 1px;
+				background-color: #C4C4C4;
+			}
+		}
+		&.active {
+			background-color: #FFE4E1;
+			color: $gray-color;
+			padding: 2px;
+		}
+	}
+	&__list li a,
+	&__list li span {
+		font-size: 14px;
+		line-height: 1.35;
+		font-weight: 400;
+		color: $gray-color;
+		transition: all 0.3s ease-in-out;
+		&:hover, &:active, &:focus {
+			text-decoration: none;
+			color: #FFE4E1;
+		}
+	}
+}

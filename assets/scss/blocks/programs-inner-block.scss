@@ -13,18 +13,18 @@
 }
 
 .programs-inner-block {
-	padding-top: 260px;
+	margin-top: 25px;
+	margin-bottom: 100px;
+	padding-left: 50px;
+	padding-right: 50px;
+	&__content-background {
+		background-color: #FFE4E1;
+	}
 	&__content-block {
-		width: 100vw;
-		max-width: 1820px;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		margin-top: 25px;
-		margin-bottom: 100px;
+		width: 100%;
+		display: block;
 		padding-top: 70px;
 		padding-bottom: 100px;
-		background-color: #FFE4E1;
 	}
 	&__content-title {
 		display: block;
@@ -36,7 +36,15 @@
 		color: #1b1b1b;
 	}
 	&__content-icon {
+		display: block;
 		margin-bottom: 14px;
+		img {
+			display: block;
+			margin: 0 auto;
+			width: 80px;
+			height: 80px;
+			object-fit: contain;
+		}
 	}
 	&__content-text {
 		display: block;
@@ -52,5 +60,8 @@
 	}
 	.programs-block__card-price {
 		margin-bottom: 57px;
+	}
+	.btn--doctors {
+		margin: 0 auto;
 	}
 }

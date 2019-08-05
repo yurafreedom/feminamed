@@ -1,34 +1,20 @@
-
-.container {
-	margin: 0 auto;
-	min-width: 320px;
-	padding-left: 15px;
-	padding-right: 15px;
-	width: 100%;
-}
-
 .text-input {
 	border: none;
 	outline: none !important;
 	-webkit-appearance: none;
 	background: none;
 	overflow: hidden;
-
-	height: 60px;
+	padding-top: 20px;
+	padding-bottom: 20px;
 	line-height: normal;
 	color: #000;
 	font-weight: 400;
 	font-size: 16px;
-	font-family: 'ProximaNova'; // SET FONT FAMILY
-	
+	font-family: 'Open Sans', sans-serif;
 	border-radius: 3px;
-	
-	border: 1px solid #ccc;
-	
-
+	border: none;
 	padding-left: 20px;
-	padding-right: 0;
-
+	padding-right: 20px;
 	width: 100%;
 	background-color: #fff;
 
@@ -61,28 +47,4 @@
     @media (min-width: 1920px) { @content; }
   }
 }
-
-
-@include for-size(mobile) {
-	.container {
-		max-width: 500px;
-		padding-left: 15px;
-		padding-right: 15px;
-	}
-}
-
-@include for-size(tablet) {
-	.container {
-		max-width: 900px;
-		padding-left: 30px;
-		padding-right: 30px;
-	}
-}
-
-@include for-size(desktop) {
-	.container {
-		width: 1170px;
-	}
-}
-
 

@@ -91,7 +91,7 @@ gulp.task('css:build', function () {
 		.pipe(autoprefixer(['last 20 versions', '> 0%']))
 		.pipe(gulp.dest(path.build.css)).pipe(rename({
 			suffix: '.min'
-		})).pipe(cleanCSS())
+		}))// .pipe(cleanCSS())
 		.pipe(sourcemaps.write('./'))
 		.pipe(gulp.dest(path.build.css))
 		.pipe(webserver.stream());
@@ -99,13 +99,13 @@ gulp.task('css:build', function () {
 
 gulp.task('jsplugins:build', function () {
     return gulp.src(path.src.jsplugins)
-		.pipe(concat('scripts.js'))
-        .pipe(rename('plugins.min.js'))
-		.pipe(uglify({
-            output: {
-                'ascii_only': true
-            }
-        }))
+		// .pipe(concat('scripts.js'))
+  //       .pipe(rename('plugins.min.js'))
+		// .pipe(uglify({
+  //           output: {
+  //               'ascii_only': true
+  //           }
+  //       }))
         .pipe(gulp.dest(path.build.js))
 		.pipe(webserver.reload({stream: true}));
 });
@@ -118,7 +118,7 @@ gulp.task('js:build', function () {
 		.pipe(rename({
 			suffix: '.min'
 		}))
-		.pipe(uglify())
+		// .pipe(uglify())
 		.pipe(gulp.dest(path.build.js))
 		.pipe(webserver.reload({
 			stream: true

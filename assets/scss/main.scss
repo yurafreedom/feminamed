@@ -14,6 +14,7 @@
 @import "blocks/plugins";
 @import "blocks/popup-block";
 @import "blocks/page-header";
+@import "blocks/breadcrumbs-block";
 @import "blocks/services-block";
 @import "blocks/services-inner-block";
 @import "blocks/price-block";
@@ -44,9 +45,6 @@ body {
 	font-weight: 400;
 	line-height: 1.2;
 	font-size: 16px;
-	min-width: 320px;
-	
-	overflow-x: hidden;
 }
 
 .page-list {
