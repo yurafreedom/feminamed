@@ -716,6 +716,22 @@
 	}
 
 	.guarantees-block {
+		&__slider .row {
+			display: flex;
+			flex-direction: row;
+			flex-wrap: nowrap;
+			overflow-x: auto;
+			width: calc(100% + 30px);
+			margin-left: -15px;
+		}
+		&__photo-block {
+			flex-shrink: 0;
+			img {
+				width: 240px;
+				height: 340px;
+				margin: 0;
+			}
+		}
 		&__title {
 			font-size: 16px;
 			line-height: 1.375;
