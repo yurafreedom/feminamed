@@ -47,6 +47,17 @@
 		border-radius: 50%;
 		background-color: #fff;
 		cursor: pointer;
+		transition: all 0.3s ease-in-out;
+		&:hover, &:active, &:focus {
+			background-color: #FD8BA3;
+		}
+	}
+	&__social-block ul svg {
+		fill: #FD8BA3;
+		transition: all 0.3s ease-in-out;
+	}
+	&__social-block ul a:hover svg {
+		fill: #fff;
 	}
 	&__privacy-link {
 		display: block;
@@ -57,6 +68,10 @@
 		color: $gray-color;
 		text-decoration: underline;
 		cursor: pointer;
+		transition: all 0.3s ease-in-out;
+		&:hover, &:active, &:focus {
+			color: #fda4b7;
+		}
 	}
 	&__copyright-block {
 		display: flex;

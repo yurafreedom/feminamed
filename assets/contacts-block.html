@@ -1,0 +1,153 @@
+@@include('template/head.html', {
+	"pagetitle": "Главная страница",
+	"bodyclass": ""
+})
+@@include('template/page-header.html')
+
+
+<div class="main-page-wrap">
+	<div class="main-page-blocks">
+
+		<section class="breadcrumbs-block">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="breadcrumbs-block__list">
+							<ul class="page-list">
+								<li><a href="index.html">Главная</a></li>
+								<li class="active"><span>Контакты</span></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="contacts-block">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<h2 class="contacts-block__title">Контакты</h2>
+
+						<div class="contacts-block__content-block">
+
+							<div class="contacts-block__time-block">
+								<span class="contacts-block__time-text">ПН - ПТ 7:00 - 21:00</span>
+								<span class="contacts-block__time-text">СБ - ВС 8:00 - 20:00</span>
+							</div>
+
+							<div class="contacts-block__location-block">
+								<a href="tel:+88000000000" class="contacts-block__phone-link">8 800 000 00 00</a>
+								<span class="contacts-block__address">Краснодар, ул. Красная, 90</span>
+								<a href="mailto:info@feminamed.ru" class="contacts-block__mail-link">info@feminamed.ru</a>
+							</div>
+
+							<div class="page-footer__social-block">
+								<ul class="page-list">
+									<li>
+										<a href="#">
+											<svg width="20" height="20">
+												<use xlink:href="#facebook"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<svg width="20" height="20">
+												<use xlink:href="#instagram"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<svg width="20" height="20">
+												<use xlink:href="#vk"></use>
+											</svg>
+										</a>
+									</li>
+								</ul>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<section class="map-block">
+			<div id="feminamed" class="map-block__map"></div>
+		</section>
+
+		<section class="callback-block">
+			<div class="callback-block__content-background">
+				<div class="container">
+					<div class="row">
+						<div class="col-xl-8 offset-xl-2">
+							<h2 class="callback-block__title">Есть вопросы? Заказать обратный звонок</h2>
+							<p class="callback-block__text">Мы проконсультируем Вас по всем интересующим Вас вопросам</p>
+							<form action="" class="callback-block__form">
+								<div class="callback-block__form-wrapper">
+									<div class="input-wrapper">
+										<input class="text-input callback-block__input" type="name" placeholder="Ваше имя">
+									</div>
+									<div class="input-wrapper">
+										<input class="text-input callback-block__input" type="tel" placeholder="Ваше имя">
+									</div>
+								</div>
+								<textarea name="callback_comment" id="callback_comment" class="callback-block__textarea" placeholder="Сообщение"></textarea>
+								<span class="callback-block__agreement">Нажав на кнопку, я даю согласие на <a href="#">обработку персональных данных</a></span>
+								<button class="btn btn--reception" type="button">
+									<span>Отправить</span>
+									<div class="icon--reception">
+										<svg width="22" height="12">
+											<use xlink:href="#price_arrow"></use>
+										</svg>
+									</div>
+								</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+	@@include('template/page-footer.html')
+</div>
+
+@@include('template/sprite.html')
+@@include('template/popups.html')
+@@include('template/scripts.html')
+
+<script src="https://api-maps.yandex.ru/2.1/?load=package.full&lang=ru-RU"></script>
+<script>
+	ymaps.ready(init);
+
+	var map;
+
+	function init() {
+
+		map = new ymaps.Map ("feminamed", {
+		center: [45.03100507458392,38.97291449999995],
+		zoom: 16
+		});
+
+		map.behaviors.disable('scrollZoom'); 
+
+		var saleOffice = new ymaps.Placemark([45.025709764975765,38.957464976074185], {}, {
+		iconLayout: 'default#image',
+		// Своё изображение иконки метки.
+		iconImageHref: 'img/map-point.svg',
+		// Размеры метки.
+		iconImageSize: [70, 100],
+		// Смещение левого верхнего угла иконки относительно
+		// её "ножки" (точки привязки).
+		iconImageOffset: [-16, -18]
+		});
+
+		map.geoObjects.add(saleOffice);
+
+	}
+</script>
+
+</body>
+</html>

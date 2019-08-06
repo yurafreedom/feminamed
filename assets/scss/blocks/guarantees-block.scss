@@ -1,0 +1,36 @@
+.guarantees-block {
+	padding-bottom: 70px;
+	&__title {
+		display: block;
+		text-align: center;
+		margin-bottom: 40px;
+		font-family: 'Prata', sans-serif;
+		font-size: 24px;
+		font-weight: 400;
+		line-height: 1.375;
+		color: #1b1b1b;
+	}
+	&__text {
+		display: block;
+		text-align: center;
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 1.75;
+		color: $gray-color;
+	}
+	&__text p {
+		max-width: 970px;
+		margin: 0 auto;
+		margin-bottom: 40px;
+	}
+	&__photo-block {
+		display: block;
+		margin-bottom: 30px;
+		img {
+			display: block;
+			margin: 0 auto;
+			max-width: 100%;
+			height: auto;
+		}
+	}
+}

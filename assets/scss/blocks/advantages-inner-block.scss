@@ -1,0 +1,37 @@
+.advantages-inner-block {
+	padding-bottom: 90px;
+	&__card {
+		width: 100%;
+	}
+	&__card-icon {
+		display: block;
+		margin-bottom: 30px;
+		img {
+			display: block;
+			margin: 0 auto;
+			width: 80px;
+			height: 80px;
+			object-fit: contain;
+		}
+	}
+	&__card-title {
+		display: block;
+		text-align: center;
+		font-family: 'Prata', sans-serif;
+		font-size: 18px;
+		font-weight: 400;
+		line-height: 1.3;
+		margin: 0;
+		margin-bottom: 10px;
+		color: #1b1b1b;
+	}
+	&__card-text {
+		display: block;
+		margin: 0;
+		text-align: center;
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 1.7;
+		color: $gray-color;
+	}
+}

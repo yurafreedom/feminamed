@@ -1,5 +1,5 @@
 .description-block {
-	margin-bottom: 90px;
+	padding-bottom: 90px;
 	&__title {
 		display: block;
 		margin-bottom: 40px;
@@ -11,12 +11,14 @@
 	}
 	&__text {
 		display: block;
-		margin: 0;
-		margin-bottom: 20px;
 		font-size: 14px;
 		font-weight: 400;
 		line-height: 1.7;
 		color: $gray-color;
+	}
+	&__text p {
+		margin: 0;
+		margin-bottom: 20px;
 	}
 	&__photo-block {
 		display: block;

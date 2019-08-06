@@ -1,5 +1,5 @@
 .equipment-block {
-	margin-bottom: 100px;
+	padding-bottom: 100px;
 	&__title {
 		display: block;
 		font-family: 'Prata', sans-serif;
@@ -9,12 +9,14 @@
 		color: #1b1b1b;
 		margin-bottom: 40px;
 	}
-	&__text p {
+	&__text {
 		display: block;
 		margin: 0;
 		font-size: 14px;
 		line-height: 1.7;
 		color: $gray-color;
+	}
+	&__text p {
 		margin-bottom: 30px;
 	}
 	&__photo-block {

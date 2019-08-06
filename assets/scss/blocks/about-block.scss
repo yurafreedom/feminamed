@@ -1,0 +1,124 @@
+.about-block {
+	padding-top: 100px;
+	padding-bottom: 100px;
+	padding-left: 50px;
+	padding-right: 50px;
+	&__title {
+		display: block;
+		text-align: center;
+		font-family: 'Prata', sans-serif;
+		font-size: 30px;
+		line-height: 1.36;
+		font-weight: 400;
+		color: #1b1b1b;
+		margin-bottom: 75px;
+	}
+	&__content-background {
+		background-color: #FFE4E1;
+		padding-top: 100px;
+		padding-bottom: 100px;
+	}
+	&__advantages-block {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		margin-bottom: 64px;
+	}
+	&__advantages-card {
+		display: flex;
+		flex-direction: row;
+		align-items: flex-start;
+		justify-content: flex-start;
+		&:not(:last-child) {
+			margin-right: 103px;
+		}
+	}
+	&__advantages-inner {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: flex-start;
+	}
+	&__advantages-inner span {
+		display: inline-block;
+		font-family: 'Prata', sans-serif;
+		font-size: 24px;
+		font-weight: 400;
+		line-height: 1.375;
+		color: #1b1b1b;
+		background-color: #fff;
+		&:not(:last-child) {
+			margin-bottom: 4px;
+		}
+	}
+	&__advantages-from {
+		display: block;
+		font-family: 'Prata', sans-serif;
+		font-size: 24px;
+		font-weight: 400;
+		line-height: 1.375;
+		color: #1b1b1b;
+		background-color: #fff;	
+		margin-right: 8px;	
+	}
+	&__advantages-num {
+		display: block;
+		font-family: 'Prata', sans-serif;
+		font-size: 96px;
+		font-weight: 400;
+		line-height: 1.35;
+		color: #FD8BA3;
+		margin-right: 8px;
+	}
+	&__content-block {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		background-color: #fff;
+		padding: 100px;
+	}
+	&__content-block p {
+		display: block;
+		text-align: center;
+		margin: 0;
+		margin-bottom: 38px;
+		font-family: 'Prata', sans-serif;
+		font-size: 24px;
+		line-height: 1.6;
+		color: #1b1b1b;
+	}
+	&__content-photo {
+		display: inline-block;
+		border-radius: 50%;
+		border: 4px solid #FD8BA3;
+		overflow: hidden;
+		margin-bottom: 20px;
+		img {
+			display: inline-block;
+			margin: 0 auto;
+			max-width: 100%;
+			width: 130px;
+			height: 130px;
+			object-fit: contain;
+		}
+	}
+	&__content-name {
+		display: block;
+		text-align: center;
+		font-size: 20px;
+		font-weight: 400;
+		line-height: 1.35;
+		color: #1b1b1b;
+		margin-bottom: 7px;
+	}
+	&__content-position {
+		display: inline-block;
+		font-size: 18px;
+		font-weight: 400;
+		font-style: italic;
+		line-height: 1.38;
+		color: #fff;
+		padding: 2px 4px 1px 5px;
+		background-color: #FD8BA3;
+	}
+}
