@@ -716,6 +716,12 @@
 	}
 
 	.guarantees-block {
+		&__slider {
+			display: flex;
+			margin-left: 15px;
+			overflow: hidden;
+			overflow-x: auto;
+		}
 		&__slider .row {
 			display: flex;
 			flex-direction: row;
@@ -724,11 +730,19 @@
 			width: calc(100% + 30px);
 			margin-left: -15px;
 		}
-		&__photo-block {
+		&__slider .col-12 {
+			flex: unset;
 			flex-shrink: 0;
+			padding: 0;
+			width: auto;
+		}
+		&__photo-block {
+			display: block;
+			width: 240px;
+			height: 340px;
+			flex-shrink: 0;
+			margin-right: 10px;
 			img {
-				width: 240px;
-				height: 340px;
 				margin: 0;
 			}
 		}
