@@ -94,14 +94,24 @@ $('[data-toggle="price-tab"]').click(function(e) {
 });
 
 $(document).ready(function () {
-  var mySwiper = new Swiper ('.swiper-container', {
-    direction: 'horizontal',
-    loop: true,
-	  navigation: {
-	    nextEl: '.swiper-button-next',
-	    prevEl: '.swiper-button-prev',
-	  },
-  })
+ if( $(".swiper-container").length ) {
+	  var mySwiper = new Swiper ('.swiper-container', {
+		slidesPerView: 1,
+		spaceBetween: 20,
+		navigation: {
+			nextEl: '.swiper-button-next',
+			prevEl: '.swiper-button-prev',
+		},
+		pagination: {
+			el: ".js--doctor-pag",
+			clickable: true,
+		},
+	  });
+        $(window).resize(function() {
+            mySwiper.update(true),
+            console.log("mySwiper update")
+        })
+ }
 });
 
 $(".page-footer__scroll-link").click(function(e) {

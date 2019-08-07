@@ -19,14 +19,17 @@
 		color: $gray-color;
 	}
 	&__content-block ul {
-		padding-left: 15px;
-	}
-	&__content-block ul li {
 		position: relative;
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		padding-left: 15px;
 		font-size: 14px;
 		line-height: 1.7;
 		font-weight: 400;
 		color: $gray-color;
+	}
+	&__content-block ul li {
 		&:not(:last-child) {
 			margin-bottom: 20px;
 		}

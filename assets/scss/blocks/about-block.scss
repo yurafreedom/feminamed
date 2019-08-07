@@ -75,16 +75,16 @@
 		flex-direction: column;
 		align-items: center;
 		background-color: #fff;
-		padding: 100px;
+		padding: 102px 100px 100px 100px;
 	}
 	&__content-block p {
 		display: block;
 		text-align: center;
 		margin: 0;
-		margin-bottom: 38px;
+		margin-bottom: 37px;
 		font-family: 'Prata', sans-serif;
 		font-size: 24px;
-		line-height: 1.6;
+		line-height: 1.67;
 		color: #1b1b1b;
 	}
 	&__content-photo {
@@ -97,8 +97,8 @@
 			display: inline-block;
 			margin: 0 auto;
 			max-width: 100%;
-			width: 130px;
-			height: 130px;
+			width: 122px;
+			height: 122px;
 			object-fit: contain;
 		}
 	}
@@ -116,9 +116,9 @@
 		font-size: 18px;
 		font-weight: 400;
 		font-style: italic;
-		line-height: 1.38;
+		line-height: 1.1;
 		color: #fff;
-		padding: 2px 4px 1px 5px;
+		padding: 2px 4px 3px 5px;
 		background-color: #FD8BA3;
 	}
 }

@@ -38,6 +38,8 @@
 		position: relative;
 		display: flex;
 		flex-direction: row;
+		justify-content: center;
+		padding-left: 30px;
 		flex-wrap: wrap;
 	}
 	&__input {

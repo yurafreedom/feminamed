@@ -28,6 +28,7 @@
 		color: $gray-color;
 	}
 	&__card {
+		width: 100%;
 		display: block;
 		border-radius: 10px;
 		background-color: #FFE4E1;
@@ -49,6 +50,7 @@
 		display: block;
 		text-align: center;
 		margin-bottom: 15px;
+		min-height: 44px;
 		font-size: 16px;
 		font-weight: 600;
 		line-height: 1.375;
@@ -60,17 +62,22 @@
 		display: block;
 		text-align: center;
 		margin: 0;
-		margin-bottom: 33px;
+		margin-bottom: 34px;
 		font-size: 14px;
 		font-weight: 400;
-		line-height: 1.7;
+		line-height: 1.72;
 		color: $gray-color;
+	}
+	&__card-old-wrap {
+		display: block;
+		text-align: center;
 	}
 	&__card-old {
 		position: relative;
-		display: block;
+		display: inline-block;
+		padding: 0 8px;
 		text-align: center;
-		margin-bottom: 14px;
+		margin-bottom: 15px;
 		font-family: 'Prata', sans-serif;
 		font-size: 18px;
 		font-weight: 400;
@@ -80,19 +87,19 @@
 			content: '';
 			position: absolute;
 			top: 50%;
-			left: auto;
-			right: auto;
-			transform: translateY(-50%);
-			width: 115px;
-			height: 1px;
-			margin-left: -8px;
+			left: 0;
+			right: 0;
+			margin: 0;
+			margin-top: -2px;
+			width: auto;
+			height: 2px;
 			background-color: #F23847;
 		}
 	}
 	&__card-price {
 		display: block;
 		text-align: center;
-		margin-bottom: 40px;
+		margin-bottom: 41px;
 		font-family: 'Prata', sans-serif;
 		font-size: 28px;
 		font-weight: 400;

@@ -18,7 +18,7 @@
 		flex-direction: row;
 		justify-content: flex-start;
 		align-items: flex-start;
-		margin-bottom: 65px;
+		margin-bottom: 55px;
 	}
 	&__nav-block .btn--price:not(:last-child) {
 		margin-right: 15px;
@@ -43,7 +43,7 @@
 		padding-bottom: 14px;
 		border-bottom: 1px solid #E3E3E3;
 		&:not(:last-child) {
-			margin-bottom: 20px;
+			margin-bottom: 2px;
 		}
 	}
 	&__card-heading {
@@ -68,6 +68,7 @@
 		flex-direction: row;
 		align-items: center;
 		flex-shrink: 0;
+		padding-right: 10px;
 		span {
 			display: block;
 			font-size: 20px;
@@ -99,7 +100,7 @@
 		transition: all 0.3s ease-in-out;
 	}
 	&__body {
-		padding: 57px 0 63px 50px;
+		padding: 57px 0 49px 50px;
 		transition: all 0.3s ease-in-out;
 	}
 	&__card-collapse {
@@ -130,24 +131,27 @@
 		margin-bottom: 43px;
 		font-size: 14px;
 		font-weight: 400;
-		line-height: 1.7;
+		line-height: 1.72;
 		color: $gray-color;
 	}
 	&__body-list ul {
-		padding-left: 20px;
-	}
-	&__body-list ul li {
 		position: relative;
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		padding-left: 20px;
 		font-size: 14px;
 		font-weight: 400;
 		line-height: 1.7;
 		color: $gray-color;
+	}
+	&__body-list ul li {
+		position: relative;
 		&::before {
 			content: '';
 			position: absolute;
-			top: 50%;
-			transform: translateY(-50%);
-			left: -15px;
+			top: 9px;
+			left: -20px;
 			width: 5px;
 			height: 5px;
 			border-radius: 50%;
@@ -155,6 +159,6 @@
 		}
 	}
 	&__body-list ul li:not(:last-child) {
-		margin-bottom: 30px;
+		margin-bottom: 21px;
 	}
 }
